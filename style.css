@@ -12,6 +12,7 @@
     --colorTwo: #f06c6a;
     --colorThree: #27a34e;
     --colorFour: #69f094;
+    --colorFive: #e4d7d6;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
     justify-content: space-between;
     width: 100vw;
     flex-flow: wrap;
-    background-color: var(--colorTwo);
+    background-color: var(--colorFive);
     align-items: center;
 }
 
@@ -51,6 +52,23 @@ body {
     margin-left: 0.8rem;
 }
 
+#menu ul li {
+    margin-left: 0.8rem;
+}
 #menu ul li a {
     color: black;
+}
+
+#menu ul li a:hover {
+    color: black;
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+    animation-name: teste;
+    animation-duration: 0.6s;
+    
+   
+}
+
+@keyframes teste {
+    from {border-bottom: 1px solid rgba(255, 0, 0, 0);}
+    to {border-bottom: 1px solid rgba(255, 0, 0, 1);}
 }
