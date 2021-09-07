@@ -16,14 +16,22 @@
     --colorSix: #F61E2F;
     --colorSeven: #f4c4c7;
     --colorEight: #f0e0de;
+    --colorNine: #e6a4a8;
+    --colorTen: #928182;
 }
 
 a {
-    color: black;
+    color: white;
 }
 
-a:hover {
-    background: yellowgreen;
+#menu  a:hover {
+    background: var(--colorTen);
+    border-radius: 5px;
+    
+}
+
+a:active{
+    color: rgb(0, 0, 0);
 }
 
 #logo {
@@ -38,21 +46,139 @@ a:hover {
     height: 80px;
     padding: 1rem;
     justify-content: space-between;
-    background-color: var(--colorEight);
+    background-color: var(--colorSix);
+}
+#menu {
+    display: block;
+    visibility: hidden;
+    /* display: block;     */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    width: 50%;
+    height: 0;
+    transition: 0.6s;
+    background-color: var(--colorSeven);
+    top: 80px;
+    right:0px;
+    z-index: 100;
+    text-align: center;
+    overflow-y: hidden;
 }
 
-#menu {
-    display: flex;
-    gap: 0.5rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold
-}
+
 
 #menu a {
     display: block;
-    padding: 0.5rem;
-    border-radius: 10px;
+    padding: 1rem 0;   
+    margin: 0 1rem;
+    border-bottom: 1px solid var(--colorTwo);
 }
+
+#nav.active #menu {
+    visibility: visible;  
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+#mobilebtn {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+
+}
+
+#mobileMenu {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    color:white;
+    
+}
+
+#mobileMenu::after, #mobileMenu::before {
+    content: " ";
+    display: block;
+    width:20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+#nav.active #mobileMenu {
+    border:none;
+}
+#nav.active #mobileMenu::after {
+    transform: rotate(135deg);
+    top: -7px;
+}
+#nav.active  #mobileMenu::before {
+    transform: rotate(-135deg);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+    #mobilebtn{
+        display: block;
+        visibility: hidden;
+        float: left;
+    }
+    nav#nav{
+        display: flex;
+        align-items: center;
+    }
+    #menu {
+        display: flex;
+        align-items:center;
+        gap: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        position: inherit;
+        background-color: none;
+        top: 0;
+        right:0;
+        height: 0;
+        visibility: visible; 
+        overflow-y: visible; 
+        
+    }
+    #menu a {
+        display: block;
+        padding: 0.5rem;
+        border: none;
+        
+    }
+    #nav.active #menu {
+        display: none;
+        visibility: visible;  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

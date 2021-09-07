@@ -14,12 +14,15 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <header id="header">
       <a href="#" id="logo">Velocity</a>
       <nav id="nav">
-        <button id="mobilebtn">Menu</button>
-        <ul id='menu'>
+        <button id="mobilebtn" aria-haspopup='true' aria-controls='menu' aria-label="Abrir menu" aria-expanded="false">
+          <span id="mobileMenu"></span>
+        </button>
+        <ul id="menu" role="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Planos</a></li>
@@ -27,8 +30,6 @@
         </ul>
       </nav>
     </header>
-
-
 
     <script src="./script.js"></script>
   </body>
