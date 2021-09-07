@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+/* Cores? Não sei se vou usar mas ta ai */
 :root {
     --colorOne: #ff8c8a;
     --colorTwo: #f06c6a;
@@ -27,15 +28,14 @@ body {
     background-color: var(--colorEight);
     font-family: 'Inter', sans-serif;
 }
+/* Area contato */
 
 .num {
     display:none;
     
 }
 
-.linkWhats{
-    cursor: pointer;
-}
+
 
 a {
     color: white;
@@ -122,6 +122,7 @@ a:active{
     
 }
 
+/* Animação botão mobile */
 #mobileMenu::after, #mobileMenu::before {
     content: " ";
     display: block;
@@ -132,6 +133,7 @@ a:active{
     transition: 0.3s;
     position: relative;
 }
+/* Se nav tiver a classe .active faça: */
 
 #nav.active #mobileMenu {
     border:none;
@@ -152,7 +154,13 @@ a:active{
 
 
 
+
+/* Para desktop/tablet acima de 768px de largura */
 @media (min-width: 768px) {
+    /* Area contato */
+    .linkWhats{
+        cursor: pointer;
+    }
     .num {
         display:flex;
         /* background-color: var(--colorEleven); */
@@ -165,19 +173,21 @@ a:active{
         gap: 1.5rem;
     }
 
+    /* Header */
+
     #header {
         justify-content:space-evenly;
         align-items: center;
     }
 
 
-
-
+    /* Menu mobile escondido*/
     #mobilebtn{
         display: block;
         visibility: hidden;
         float: left;
     }
+    /* Transformando menu mobile em menu para desktop */
     nav#nav{
         display: flex;
         align-items: center;
@@ -205,6 +215,7 @@ a:active{
         border: none;
         
     }
+    /* Se nav tiver a classe .active faça: */
     #nav.active #menu {
         display: none;
         visibility: visible;  
