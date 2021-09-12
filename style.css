@@ -95,7 +95,7 @@ a:active{
     padding: 1rem 0;   
     margin: 0 1rem;
     border-bottom: 1px solid var(--colorTwo);
-       transition-property: background-color, border-radius;
+    transition-property: background-color, border-radius;
     transition-duration: 0.5s;
 }
 
@@ -173,6 +173,9 @@ a:active{
         padding: 4px;
         justify-content: center;
         gap: 1.5rem;
+    }
+    .num a {
+        color: black;
     }
 
     /* Header */
