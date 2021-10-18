@@ -96,49 +96,61 @@
       </div>
     </div> -->
 
-    <div class="img-slider">
-      <div class="slide active">
-        <img src="./assets/imgs/slider/1.jpg" alt="">
-        <div class="info">
-          <h2>Slide 01</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="slider">
+      <!-- fade css -->
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>FIBRA</h1>
+          <p>Mais Velocidade<br>Conexão 5ghz</p>
         </div>
+        <img src="./assets/imgs/slider/1.jpg" style="width: 100%; height: 100%;">
       </div>
-      <div class="slide">
-        <img src="./assets/imgs/slider/2.jpg" alt="">
-        <div class="info">
-          <h2>Slide 02</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 2</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
         </div>
+        <img src="./assets/imgs/slider/2.jpg" style="width: 100%; height: 100%;">
       </div>
-      <div class="slide">
-        <img src="./assets/imgs/slider/3.jpg" alt="">
-        <div class="info">
-          <h2>Slide 03</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 3</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
         </div>
+        <img src="./assets/imgs/slider/3.jpg" style="width: 100%; height: 100%;">
       </div>
-      <div class="slide">
-        <img src="./assets/imgs/slider/4.jpg" alt="">
-        <div class="info">
-          <h2>Slide 04</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 4</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
         </div>
+        <img src="./assets/imgs/slider/4.jpg" style="width: 100%; height: 100%;">
       </div>
-      <div class="slide">
-        <img src="./assets/imgs/slider/5.jpg" alt="">
-        <div class="info">
-          <h2>Slide 05</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 5</h1>
+          <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
         </div>
+        <img src="./assets/imgs/slider/5.jpg" style="width: 100%; height: 100%;">
       </div>
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
+      <!-- /fade css -->
+      
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
+      <!-- /onclick js -->
     </div>
     <script src="./script.js"></script>
   </body>
