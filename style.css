@@ -28,6 +28,7 @@ body {
     background-color: var(--colorEight);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 /* Area contato */
 
@@ -242,7 +243,6 @@ a:active{
 .txt {
   position: absolute;
   line-height: 35px;
-
   background-color: rgba(0, 2, 3, 0.5) ;
   padding: 0.8rem;
   border-radius: 5px;
